@@ -13,5 +13,5 @@ func main() {
 	}
 	cmd := exec.Command(args[0], args[1:]...)
 	cmd.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-	cmd.Run()
+	cmd.Start()
 }
